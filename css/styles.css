@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--title-color);
+    transition: all 0.3s ease;
+}
+
+/* GENERAL */
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+    margin: 0 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+li, p {
+    font-family: 'Poppins';
+}
+
+p {
+    color: var(--txt-color);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+header div {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 14px;
+}
+
+header li {
+    display: inline;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--btn-color);
+}
+
+/* MAIN */
+
+.bigLogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 5rem auto 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+span {
+    color: #fa0c0c;
+}
+
+p {
+    text-align: center;
+}
+
+.p {
+    color: var(--title-color);
+}
+
+/* ABOUT ME */
+
+#aboutMe {
+    margin: 16rem 0;
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 7rem 2rem;
+    border-radius: 15px;
+}
+
+.aboutMe div {
+    padding: 2rem;
+    background-color: var(--div-bg-color);
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(0.94, 0.06, 0, 0.93);
+}
+
+div ul li {
+    color: var(--txt-color);
+}
+
+.aboutMe div:hover {
+    transform: translateY(-5%);
+    background-color: var(--div-hover-bg-color);
+}
+
+/* SKILLS */
+
+#skills {
+    margin: 16rem 0;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--div-bg-color);
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    width: 50px;
+    transition: all 0.5s cubic-bezier(0.94, 0.06, 0, 0.93);
+}
+
+.skill i {
+    font-size: 50px;
+}
+
+.skill:hover {
+    transform: translateY(-5%);
+    background-color: var(--div-hover-bg-color);
+}
+
+/* WORKS */
+
+#works {
+    margin: 16rem 0;
+    text-align: center;
+}
+
+.worksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.work img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--div-bg-color);
+    border-radius: 15px;
+    width: 75%;
+    text-wrap: pretty;
+    transition: all 0.5s cubic-bezier(0.94, 0.06, 0, 0.93);
+}
+
+.work h3 {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.work p {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
+    text-align: left;
+    font-size: 14px;
+    color: var(--txt-color);
+}
+
+.technologies {
+    margin: 1rem 0;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.work:hover {
+    transform: translateY(-5%);
+    background-color: var(--div-hover-bg-color);
+}
+
+/* CONTACT */
+
+#contact {
+    margin: 16rem 0;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+form div {
+    margin: 5px 0 15px 0;
+    border: 1px solid var(--form-border);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: none;
+    overflow: none;
+    outline: none;
+    color: var(--txt-color);
+    font-size: 14px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: min-content;
+}
+
+form button {
+    width: 100%;
+    background-color: var(--btn-color);
+    color: var(--txt-btn-color);
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* --- ESTILOS DEL MENÚ Y OVERLAY --- */
+
+/* Capa oscura de fondo */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    display: none; /* Oculto por defecto */
+}
+
+/* Mostrar overlay cuando esté activo */
+.menu-overlay.active {
+    display: block;
+}
+
+/* Botón hamburguesa (oculto en PC) */
+.menu-toggle {
+    display: none;
+}
+
+.nav-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- RESPONSIVE: MÓVIL (850px o menos) --- */
+@media (max-width: 850px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+        color: var(--title-color);
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Escondido a la derecha */
+        width: 280px;
+        height: 100vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -10px 0 20px rgba(0,0,0,0.2);
+    }
+
+    /* Clase para mostrar el menú */
+    .nav-container.active {
+        right: 0;
+    }
+
+    .nav-container nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .menu-controls-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Los mantiene al centro, no a las esquinas */
+        gap: 15px; /* Espacio pequeño entre ellos */
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column; /* Cambia a 'row' si los quieres uno al lado del otro */
+    }
+
+    .social-dropdown {
+        width: 80%; /* Controlamos el ancho para que no toque los bordes */
+        background-color: var(--div-bg-color);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0 20px 0 10px;
+    }
+
+    .dropdown-trigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s;
+    }
+
+    /* Lista de iconos (Despliegue hacia abajo) */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        
+        /* Efecto de cerrado */
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        background-color: var(--div-hover-bg-color);
+    }
+
+    /* Clase activa para desplegar */
+    .social-icons.show {
+        max-height: 60px; /* Ajusta según el tamaño de tus iconos */
+        opacity: 1;
+        padding: 15px 0;
+    }
+
+    /* Rotar la flecha */
+    .rotate-arrow {
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+
+    form {
+        width: 75%;
+    }
+}
+
+/* --- ESTILOS PARA PC (Sin cambios) --- */
+@media (min-width: 851px) {
+    .dropdown-trigger { display: none; } /* Oculto en PC */
+    .social-icons { display: flex; gap: 15px; }
+}
