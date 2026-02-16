@@ -180,29 +180,29 @@
             <h2>Contáctame</h2>
             <p>¡Habla conmigo que yo te ayudaré!</p>
 
-            <form action="https://formsubmit.co/rusbeldelarosa152@gmail.com" method="POST">
+            <form action="https://formsubmit.co/rusbeldelarosa152@gmail.com" method="POST" id="form">
 
-                <label>Nombre</label>
+                <label for="nombre">Nombre</label>
                 <div>
-                    <input type="text" placeholder="Tu nombre" name="Nombre">
+                    <input type="text" placeholder="Tu nombre" name="Nombre" id="nombre">
                 </div>
 
-                <label>Email</label>
+                <label for="email">Email</label>
                 <div>
-                    <input type="email" placeholder="Tu correo electronico" name="Email">
+                    <input type="email" placeholder="Tu correo electronico" name="Email" id="email">
                 </div>
 
-                <label>Asunto</label>
+                <label for="asunto">Asunto</label>
                 <div>
-                    <input type="text" placeholder="¿Cuál es tu situación? Yo te ayudo" name="Asunto">
+                    <input type="text" placeholder="¿Cuál es tu situación? Yo te ayudo" name="Asunto" id="asunto">
                 </div>
 
-                <label>Mensaje</label>
+                <label for="mensaje">Mensaje</label>
                 <div>
-                    <textarea placeholder="Explicamé que necesitas" rows="5" name="Mensaje"></textarea>
+                    <textarea placeholder="Explicamé que necesitas" rows="5" name="Mensaje" id="mensaje"></textarea>
                 </div>
 
-                <button type="submit">ENVIAR MENSAJE</button>
+                <button type="submit" id="boton-enviar">Enviar mensaje</button>
 
                 <input type="hidden" name="_captcha" value="false">
 

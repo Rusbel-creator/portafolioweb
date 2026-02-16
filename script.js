@@ -59,3 +59,26 @@ socialTrigger.addEventListener('click', () => {
     // Rotar flecha
     arrowIcon.classList.toggle('rotate-arrow');
 });
+
+const $form = document.querySelector('#form');
+const $botonEnviar = document.querySelector('#boton-enviar');
+$form.addEventListener('submit', (event) => {
+    // Obtenemos los valores de los campos
+    const nombre = document.querySelector('#nombre').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const asunto = document.querySelector('#asunto').value.trim();
+    const mensaje = document.querySelector('#mensaje').value.trim();
+    // Lógica de validación
+    if (nombre === "" || email === "" || asunto === "" || mensaje === "") {
+        event.preventDefault(); // Detiene el envío del formulario
+        alert("¡Ups! Todos los campos son obligatorios.");
+        return;
+    }
+    // Validación extra para el email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        event.preventDefault();
+        alert("Por favor, introduce un correo electrónico válido.");
+        return;
+    }
+});
