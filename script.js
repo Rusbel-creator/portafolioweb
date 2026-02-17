@@ -62,17 +62,23 @@ $form.addEventListener('submit', (event) => {
     const email = document.querySelector('#email').value.trim();
     const asunto = document.querySelector('#asunto').value.trim();
     const mensaje = document.querySelector('#mensaje').value.trim();
+    const advertencias = document.querySelector('#warnings');
 
     if (nombre === "" || email === "" || asunto === "" || mensaje === "") {
         event.preventDefault();
-        alert("¡Ups! Todos los campos son obligatorios.");
+        advertencias.style = ("color: #fff; width: 100%; background-color: #de5656; border: 2px solid #f00; border-radius: 0.3rem; padding: 10px 0;");
+        advertencias.textContent = 'Ups, todos los campos son obligatorios';
         return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         event.preventDefault();
-        alert("Por favor, introduce un correo electrónico válido.");
+        advertencias.style = ("color: #fff; width: 100%; background-color: #de5656; border: 2px solid #f00; border-radius: 0.3rem; padding: 10px 0;");
+        advertencias.textContent = 'Por favor, introduce un correo electrónico válido.';
         return;
     }
+
+    advertencias.style = ("color: #000; width: 100%; background-color: rgb(173, 254, 173); border: 2px solid rgb(0, 202, 0); border-radius: 0.3rem; padding: 10px 0;");
+    advertencias.textContent = 'Formulario enviado :)';
 });
