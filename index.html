@@ -13,48 +13,28 @@
 </head>
 <body>
 
-    <div id="menu-overlay" class="menu-overlay"></div>
-
     <header>
         <div class="logo-area">
             <img src="image/rusbel2icon.jpeg" class="imgLogo">
             <h2>Rusbel de la Rosa Muñoz</h2>
         </div>
 
-        <div id="menu-toggle" class="menu-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-
-        <div class="nav-container" id="nav-container">
-    <nav>
-        <ul>
-            <li><a href="#aboutMe">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="menu-controls-mobile">
-        <div class="social-dropdown">
-            <div class="dropdown-trigger" id="social-trigger">
-                <span>Redes</span>
-                <i class='bx bx-chevron-down' id="arrow-icon"></i>
-            </div>
-            
-            <ul class="social-icons" id="social-menu">
-                <li><a href="https://github.com/Rusbel-creator" target="_blank"><i class='bx bxl-github'></i></a></li>
-                <li><a href="https://www.youtube.com/@roser165_YT" target="_blank"><i class='bx bxl-youtube'></i></a></li>
-                <li><a href="tel:+18293360644"><i class='bx bxl-whatsapp'></i></a></li>
-                <li><a href="https://www.instagram.com/infin_4ty/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
-        </div>
+        </nav>
+            
+        <ul class="social-icons" id="social-menu">
+            <li><a href="https://github.com/Rusbel-creator" target="_blank"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://www.youtube.com/@roser165_YT" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+            <li><a href="tel:+18293360644"><i class='bx bxl-whatsapp'></i></a></li>
+            <li><a href="https://www.instagram.com/infin_4ty/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+        </ul>
 
-        <button id="light-mode" class="theme-toggle-btn">
-            <i id="theme-icon" class="bx bxs-sun"></i>
-        </button>
-    </div>
-</div>
     </header>
 
             
@@ -136,8 +116,8 @@
                             <i class='bx bxl-javascript'></i>
                         </div>
                         <div class="linksOfWork">
-                            <a href=""><i class='bx bx-link-external'></i></a>
-                            <a href="https://github.com/Rusbel-creator/tarea_1-JS"><i class="bx bxl-github"></i></a>
+                            <a href="https://tarea-1-js.pages.dev" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="https://github.com/Rusbel-creator/tarea_1-JS" target="_blank"><i class="bx bxl-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -152,8 +132,8 @@
                             <i class='bx bxl-css3'></i>
                         </div>
                         <div class="linksOfWork">
-                            <a href=""><i class='bx bx-link-external'></i></a>
-                            <a href="https://github.com/Rusbel-creator/repositorio1.3"><i class="bx bxl-github"></i></a>
+                            <a href="https://montegosresturant.pages.dev/" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="https://github.com/Rusbel-creator/repositorio1.3" target="_blank"><i class="bx bxl-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -168,8 +148,8 @@
                             <i class='bx bxl-css3'></i>
                         </div>
                         <div class="linksOfWork">
-                            <a href=""><i class='bx bx-link-external'></i></a>
-                            <a href="https://github.com/Rusbel-creator/tarea_1"><i class="bx bxl-github"></i></a>
+                            <a href="https://formulario-de-contacto.pages.dev/" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="https://github.com/Rusbel-creator/tarea_1" target="_blank"><i class="bx bxl-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -180,42 +160,34 @@
             <h2>Contáctame</h2>
             <p>¡Habla conmigo que yo te ayudaré!</p>
 
-            <form action="https://formsubmit.co/rusbeldelarosa152@gmail.com" method="POST" id="form">
-
+            <form action="https://formsubmit.co/rusbeldelarosa152@gmail.com" method="POST">
                 <label for="nombre">Nombre</label>
                 <div>
-                    <input type="text" placeholder="Tu nombre" name="Nombre" id="nombre">
+                    <input type="text" placeholder="Tu nombre" name="Nombre" required>
                 </div>
 
                 <label for="email">Email</label>
                 <div>
-                    <input type="email" placeholder="Tu correo electronico" name="Email" id="email">
+                    <input type="email" placeholder="Tu correo electronico" name="Email" required>
                 </div>
 
                 <label for="asunto">Asunto</label>
                 <div>
-                    <input type="text" placeholder="¿Cuál es tu situación? Yo te ayudo" name="Asunto" id="asunto">
+                    <input type="text" placeholder="¿Cuál es tu situación? Yo te ayudo" name="Asunto" required>
                 </div>
 
                 <label for="mensaje">Mensaje</label>
                 <div>
-                    <textarea placeholder="Explicamé que necesitas" rows="5" name="Mensaje" id="mensaje"></textarea>
+                    <textarea placeholder="Explicamé que necesitas" rows="5" name="Mensaje" required></textarea>
                 </div>
 
-                <p id="warnings"></p>
-
                 <button type="submit" id="boton-enviar">Enviar mensaje</button>
-
                 <input type="hidden" name="_captcha" value="false">
-
                 <input type="hidden" name="_next" value="https://portafolioweb-57q.pages.dev/">
-
             </form>
         </section>
 
     </main>
-
-    <script src="script.js"></script>
 
 </body>
 </html>
