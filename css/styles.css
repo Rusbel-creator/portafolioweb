@@ -43,7 +43,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
 }
 
 header div {
