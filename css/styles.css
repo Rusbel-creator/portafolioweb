@@ -284,6 +284,17 @@ form button {
     margin-top: 30px;
 }
 
+footer {
+    border-top: 1px solid #515151;
+    padding: 1rem;
+    width: 85%;
+    margin: auto;
+}
+
+footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 @media screen and (max-width: 750px) {
     .social-icons {
         display: none;
